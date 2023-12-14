@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script><link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <meta name="format-detection" content="telephone=no">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!--JS-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.equalheights.min.js"></script>  
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/camera.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script> -->
+    <script src="js/wow/wow.js"></script>
+    <script>
+        jQuery(window).load(function() {
+            jQuery("header .brand").clone().prependTo("#preloader #status");
+            jQuery("#status").animate({"opacity":"1"},500);
+            jQuery("#status").delay(2000).fadeOut("slow");
+            jQuery("#preloader").delay(2000).fadeOut("slow");
+        });
+        jQuery(document).ready(function(){
+            jQuery('.camera_wrap').camera({
+                pagination: false,
+                navigation: true,
+                navigationHover:false,
+                loaderOpacity:'0',
+                fx:'simpleFade',
+                height:'48.8%',
+                minHeight: '500px'
+            });
+            jQuery(".owl-carousel").owlCarousel({
+                margin: 0,
+                smartSpeed: 450,
+                loop: true,
+                dots: true,
+                dotsEach: 1,
+                nav: true,
+                navClass: ['owl-prev fa fa-angle-left', 'owl-next fa fa-angle-right'],
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2},
+                    1200: { items: 5}
+                }
+            });
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="https://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="https://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="https://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="https://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="https://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="https://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="https://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+      </div>
+      <![endif]-->
+
+</head>
+<body>
+<div id="preloader">
+    <div id="status">
+        <img class="preloader_img" src="img/page_preloader.gif" alt="preloader">
+    </div>
+</div>
+<!--========================================================
+                        HEADER
+=========================================================-->
+<header id="header" class="large-header">
+    <div class="camera_wrap">
+        <div data-src="img/slide-3.jpg"></div>
+        <div data-src="img/slide-2.jpg"></div>
+        <div data-src="img/slide-1.jpg"></div>
+        <div data-src="img/slide-4.jpg"></div>
+    </div>
+    <div class="wrapper">
+        <a href="./" class="brand"
+        style="background: #ffffff !important">
+        <img src="img/LOGO.webp" alt="photo">
+            <!-- <h1>
+                
+                MARINE
+                <span>transportation</span>
+            </h1> -->
+        </a> 
+    </div>
+    <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+        <ul class="nav sf-menu clearfix">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li class="sub-menu"><a href="index-1.html">About</a>
+                <ul class="submenu">
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Conse ctetur</a></li>
+                    <li><a href="#">Eiusmod tempor</a>
+                        <ul class="submenu">
+                            <li><a href="#">Lorem ipsum dolor</a></li>
+                            <li><a href="#">Conse ctetur</a></li>
+                            <li><a href="#">Eiusmod tempor</a></li>
+                            <li><a href="#">Incididunt ut labore</a></li>
+                            <li><a href="#">Et dolore magna</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Incididunt ut labore</a></li>
+                    <li><a href="#">Et dolore magna</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Products</a>
+            </li>
+            <li><a href="index-3.html">Services</a>
+            </li>
+            <li><a href="index-4.html">Contacts</a></li>
+        </ul>
+    </nav>    
+</header> 
+<!--========================================================
+                        SLIDER
+=========================================================--> 
+<!--========================================================
+                        CONTENT
+=========================================================-->
+<div id="content">
+    <div class="full-width-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 bg-1 fw col-sm-4">
+                   <div class="block-1 left-side oneHeight">
+                        <div class="wow fadeInLeft" data-wow-delay="0.3s">
+                           <h3>FIBER FISH TANK <br>
+                            <!-- <span>transportation</span> -->
+                        </h3>
+                           <div class="thumb-pad-1">
+                               <div class="thumbnail">
+                                   <img src="img/page1-img1.jpg" alt="photo">
+                                   <div class="caption">
+                                       <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                                       <a href="#" class="btn-default btn btn-1">REad more</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="col-lg-4 bg-1 fw col-md-4 col-sm-4">
+                   <div class="block-1 left-side oneHeight">
+                        <div class="wow fadeInLeft" data-wow-delay="0.3s">
+                           <h3>ROOFING SHEET <br
+                            >
+                            <!-- <span>Statement</span> -->
+                        </h3>
+                           <div class="thumb-pad-1">
+                               <div class="thumbnail">
+                                   <img src="img/page1-img2.jpg" alt="photo">
+                                   <div class="caption">
+                                       <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                                       <a href="#" class="btn-default btn btn-1">REad more</a>
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="block-1 bg-2 fw right-side oneHeight">     
+                        <div class="wow fadeInRight" data-wow-delay="0.3s">
+                            <div class="box-1">
+                                <h3 style="font-size: 175%;">Revolutionizing the Fiber Product Industry 
+                                    <!-- <br>Marine <br>Transportation <br>Services  -->
+                                </h3>
+                                <p style="text-align: justify;">
+                                    Our Manufacturing Process : The manufacturing process of fiber products has come a long way since the development of synthetic fibers in the early 20th century. 
+                                    Today, our fiber product manufacturing company is at the forefront of this industry, 
+                                    revolutionizing the process to create high-quality products that exceed our customers' expectations. 
+                                    Our manufacturing process starts with the selection of the best raw materials available in the market. 
+                                    We make sure that the materials we use are of the best quality, so our end products are durable and high-performing. 
+                                    We take into account various factors such as strength, durability, and flexibility when selecting our raw materials. 
+                                    Once we have the raw materials,....</p>
+                                <a class="btn-default btn btn-1" href="#">REad more</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="full-width-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 oneHeight">
+                   <div class="block-1 left-side">
+                       <div class="box-2 wow fadeInLeft" data-wow-delay="0.3s">
+                            <span class="badge">01</span>
+                            <h3>who <br><span>we are</span></h3> 
+                            <h5>Lorem ipsum dolor sit amet </h5>
+                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <h5>amet conse ctetur </h5>
+                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>      
+                       </div>
+                   </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 oneHeight">
+                   <div class="block-1 left-side">
+                       <div class="box-2 wow fadeInLeft" data-wow-delay="0.3s">
+                            <span class="badge">02</span>
+                            <h3>WHAT<br><span>we DO</span></h3> 
+                            <h5>adipisicing elit sed do </h5>
+                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <h5>eiusmod tempor incididunt</h5>
+                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>          
+                       </div>
+                   </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 oneHeight">
+                    <div class="block-2 bg-3 fw right-side">      
+                        <div class="box-3 wow fadeInRight" data-wow-delay="0.3s">   
+                            <h3>The leading FIBER PRODUCT Manufactures </h3>
+                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-3 parallax-bg-1 parallax" data-parallax-speed="-0.3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Providing cost-effective</h2>
+                    <h3><span>and reliable products</span></h3>
+                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="#" class="btn-default btn btn-1">REad more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-1 bg-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
+                    <h3>Our <span>products</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel">
+            <div class="thumb-pad-2 bg-1 wow fadeIn" data-wow-delay="0.4s">
+                <div class="thumbnail">
+                    <img src="img/page1-img3.jpg" alt="photo">
+                    <div class="caption">
+                        <h5><a class="link link-1" href="#">Fiber Starcase</a></h5>
+                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididun.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-pad-2 bg-1 wow fadeIn" data-wow-delay="0.5s">
+                <div class="thumbnail">
+                    <img src="img/page1-img4.jpg" alt="photo">
+                    <div class="caption">
+                        <h5><a class="link link-1" href="#">Fiber Door</a></h5>
+                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididun.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-pad-2 bg-1 wow fadeIn" data-wow-delay="0.6s">
+                <div class="thumbnail">
+                    <img src="img/page1-img5.jpg" alt="photo">
+                    <div class="caption">
+                        <h5 style="font-size: 90%;"><a class="link link-1" href="#">Play ground equipments</a></h5>
+                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididun.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-pad-2 bg-1 wow fadeIn" data-wow-delay="0.7s">
+                <div class="thumbnail">
+                    <img src="img/page1-img6.jpg" alt="photo">
+                    <div class="caption">
+                        <h5><a class="link link-1" href="#">Multi wood designs</a></h5>
+                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididun.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumb-pad-2 bg-1 wow fadeIn" data-wow-delay="0.8s">
+                <div class="thumbnail">
+                    <img src="img/page1-img7.jpg" alt="photo">
+                    <div class="caption ">
+                        <h5><a class="link link-1" href="#">Mughappu & Thoolimanam</a></h5>
+                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididun.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- <div class="full-width-container"> 
+        <div class="google-map-api">
+            <div id="map-canvas" class="gmap"></div>
+        </div> 
+    </div>     -->
+</div>
+<!--========================================================
+                        FOOTER
+=========================================================-->
+<footer class="clearfix">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <h5>INFORMATION</h5>
+                    <ul class="list list-1">
+                        <li><a href="#" class="link link-1">Lorem ipsum dolor sit amet </a></li>
+                        <li><a href="#" class="link link-1">Conse ctetur adipisicing </a></li>
+                        <li><a href="#" class="link link-1">Elit sed do eiusmod tempor</a></li>
+                        <li><a href="#" class="link link-1">Incididunt ut labore</a></li>
+                        <li><a href="#" class="link link-1">Et dolore magna aliqua</a></li>
+                        <li><a href="#" class="link link-1">Ut enim ad minim veniam</a></li>
+                        <li><a href="#" class="link link-1">Quis nostrud exercitation </a></li>
+                        <li><a href="#" class="link link-1">Ullamco laboris nisi </a></li>
+                        <li><a href="#" class="link link-1">Ut aliquip ex ea commodo</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h5>Services</h5>
+                    <ul class="list list-1">
+                        <li><a href="#" class="link link-1">Elit sed do eiusmod tempor</a></li>
+                        <li><a href="#" class="link link-1">Incididunt ut labore </a></li>
+                        <li><a href="#" class="link link-1">Et dolore magna aliqua</a></li>
+                        <li><a href="#" class="link link-1">Ut enim ad minim veniam</a></li>
+                        <li><a href="#" class="link link-1">Quis nostrud exercitation</a></li>
+                        <li><a href="#" class="link link-1">Ullamco laboris nisi </a></li>
+                        <li><a href="#" class="link link-1">Ut aliquip ex ea commodo</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h5>partners</h5>
+                    <ul class="list list-1">
+                        <li><a href="#" class="link link-1">Ut enim ad minim veniam</a></li>
+                        <li><a href="#" class="link link-1">Quis nostrud exercitation </a></li>
+                        <li><a href="#" class="link link-1">Ullamco laboris nisi </a></li>
+                        <li><a href="#" class="link link-1">Ut aliquip ex ea commodo </a></li>
+                        <li><a href="#" class="link link-1">Lorem ipsum dolor sit amet </a></li>
+                        <li><a href="#" class="link link-1">Conse ctetur adipisicing</a></li>
+                        <li><a href="#" class="link link-1">Elit sed do eiusmod tempor</a></li>
+                        <li><a href="#" class="link link-1">Incididunt ut labore</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h5>Follow us</h5>
+                    <ul class="list social-list">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Marine transportations &copy; <span id="copyright-year"></span>. <a href="index-5.html" class="link link-2">Privacy policy</a>
+                    <!-- {%FOOTER_LINK} -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--JS-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+<script>    
+    if(jQuery("body").width()>767){
+        jQuery(".full-width-container").each(function($){
+            jQuery('.oneHeight',this).equalHeights();
+        });
+    }  
+    jQuery(window).resize(function(){
+        jQuery(".full-width-container").each(function($){
+            jQuery('.oneHeight',this).height('auto');
+            if(jQuery("body").width()>767){
+                jQuery('.oneHeight',this).equalHeights();
+            } 
+        });
+    });
+</script>
+<!-- <script type="text/javascript">
+    google_api_map_init();
+
+    function google_api_map_init() {
+        var map;
+        var coordData = new google.maps.LatLng(parseFloat(31.98389), parseFloat(-81.0541248,13));
+        var marker;
+        var styleArray = [
+            {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+                    {
+                        "color": "#193341"
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#2c5a71"
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#29768a"
+                    },
+                    {
+                        "lightness": -37
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#406d80"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#406d80"
+                    }
+                ]
+            },
+            {
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#3e606f"
+                    },
+                    {
+                        "weight": 2
+                    },
+                    {
+                        "gamma": 0.84
+                    }
+                ]
+            },
+            {
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "weight": 0.6
+                    },
+                    {
+                        "color": "#1a3541"
+                    }
+                ]
+            },
+            {
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#2c5a71"
+                    }
+                ]
+            }
+        ];
+        var markerIcon = {
+            url: "img/gmap_marker.png",
+            size: new google.maps.Size(42, 65),
+            origin: new google.maps.Point(0,0),
+            anchor: new google.maps.Point(21, 70)
+        };
+
+        function initialize() {
+            var mapOptions = {
+                zoom: 12,
+                center: coordData,
+                scrollwheel: false,
+                styles: styleArray
+            }
+            var contentString = "<div></div>";
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString,
+                maxWidth: 200
+            });
+            var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+            google.maps.event.addDomListener(window, 'resize', function() {
+                map.setCenter(coordData);
+                var center = map.getCenter();
+            });
+            marker = new google.maps.Marker({ 
+                map:map, 
+                draggable:true, 
+                position: coordData, 
+                icon: markerIcon 
+            });
+        }
+
+        google.maps.event.addDomListener(window, "load", initialize);
+
+    }
+</script> -->
+<script type="text/javascript">
+ var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7078796-5']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();</script>
+<!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager --></body>
+</html>
